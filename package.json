@@ -1,0 +1,24 @@
+{
+  "name": "aria-bootstrap4",
+  "version": "1.0.0",
+  "description": "Aria bootstrap 4 is a free ecommerce Boostrap 4 template for clothing store.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-watch": "sass --watch assets/css/style.scss assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asis2016/aria-bootstrap4.git"
+  },
+  "author": "Ashish Singh Maharjan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asis2016/aria-bootstrap4/issues"
+  },
+  "homepage": "https://github.com/asis2016/aria-bootstrap4#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "sass": "^1.32.10"
+  }
+}

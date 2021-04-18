@@ -1,0 +1,592 @@
+/* 
+    Created on      :   Sep 15, 2018
+    Author          :   Ashish Singh Maharjan
+    Auther URI      :   http://www.asm.com.np
+    Description     :   This theme is designed for Ecommerce website. 
+                        Shout out to http://www.unsplash.com for wonderful hd images.
+*/
+
+$color_one: #da6e71;
+
+html,
+body {
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.single-product {
+  padding-top: 7rem;
+
+  .card-img-top {
+    background: url("../images/f1.png");
+    background-size: cover;
+    height: 500px;
+  }
+
+  .item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.2rem;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.3);
+
+    img {
+      max-width: 100%;
+      -moz-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    .item-details {
+      position: absolute;
+      background-color: rgba(218, 110, 113, 0.5);
+      bottom: 0;
+      color: #fff;
+      width: 100%;
+    }
+
+    .addtocart {
+      position: absolute;
+      width: 100%;
+      display: none;
+      top: 50%;
+      text-align: center;
+    }
+
+    &:hover {
+      img {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      .addtocart {
+        display: block;
+      }
+    }
+  }
+}
+
+// ARCHIVE PRODUCTS
+.archive-products .item a,
+.archive-products .item a:hover {
+  color: #fff;
+}
+
+.archive-products {
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+  border-bottom: 1px solid #281926;
+
+  .item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.2rem;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.3);
+
+    img {
+      max-width: 100%;
+      -moz-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    .item-details {
+      position: absolute;
+      background-color: rgba(218, 110, 113, 0.5);
+      bottom: 0;
+      color: #fff;
+      width: 100%;
+    }
+
+    .addtocart {
+      position: absolute;
+      width: 100%;
+      display: none;
+      top: 50%;
+      text-align: center;
+    }
+
+    &:hover {
+      img {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      .addtocart {
+        display: block;
+      }
+    }
+  }
+}
+
+.archive-products-jumbotron {
+  position: relative;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+  margin: 0;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../images/slide2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  color: #fff;
+
+  h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 3rem;
+  }
+
+  .container {
+    max-width: 40rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.2;
+    z-index: 1;
+  }
+}
+
+// CONTACT US
+.contact-us {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+// HEADER
+#mainNav {
+  letter-spacing: 0.0625em;
+  background-color: #281926;
+
+  .fa-globe {
+    font-size: 2rem;
+  }
+
+  .navbar-brand {
+    color: $color_one;
+    padding: 0.9rem 0;
+    font-family: "Pacifico", cursive;
+    font-size: 1.8rem;
+    font-weight: 100;
+  }
+
+  .navbar-toggler {
+    font-size: 80%;
+    padding: 0.75rem;
+    color: $color_one;
+    border: 1px solid $color_one;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+#mainNav #mainNav .nav-link {
+  color: #f4f2f5;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item:active,
+#mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+
+    .navbar-brand {
+      padding: 0.5rem 0;
+      color: #f4f2f5;
+
+      &:hover {
+        color: $color_one;
+      }
+    }
+
+    .nav-link {
+      -webkit-transition: none;
+      transition: none;
+      padding: 2rem 1.5rem;
+      color: #f4f2f5;
+      font-weight: 600;
+
+      &:hover {
+        color: $color_one;
+      }
+
+      &:active {
+        color: white;
+      }
+    }
+  }
+
+  #mainNav.navbar-shrink {
+    background: #281926;
+    box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
+
+    .navbar-brand {
+      color: $color_one;
+    }
+
+    .nav-link {
+      color: #f4f2f5;
+      padding: 1.5rem 1.5rem 1.25rem;
+      border-bottom: 0.25rem solid transparent;
+
+      &:hover {
+        color: $color_one;
+      }
+      &:active {
+        color: $color_one;
+      }
+    }
+  }
+
+  #mainNav.navbar-shrink .nav-link.active {
+    color: $color_one;
+    outline: none;
+    border-bottom: 0.25rem solid $color_one;
+  }
+}
+
+#mainNav .dropdown-menu {
+  background-color: #281926;
+}
+
+#mainNav .dropdown-menu .dropdown-item {
+  color: #fff;
+}
+
+#mainNav .dropdown-menu .dropdown-item:hover {
+  color: $color_one;
+  text-decoration: underline;
+}
+
+#mainNav .dropdown-menu .dropdown-item {
+  background-color: transparent;
+}
+
+.masterHead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url("../images/background2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  border-bottom: 1px solid #281926;
+
+  h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+    letter-spacing: 0.1rem;
+    background: -webkit-linear-gradient(
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.2)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  h2 {
+    max-width: 20rem;
+    font-size: 1rem;
+    letter-spacing: 0.0625em;
+  }
+
+  .fa-heart {
+    color: $color_one;
+  }
+}
+
+@media (min-width: 768px) {
+  .masterHead h1 {
+    font-size: 4rem;
+    line-height: 7rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .masterHead {
+    height: 100vh;
+    padding: 0;
+    h1 {
+      font-size: 6.5rem;
+      line-height: 12.5rem;
+      letter-spacing: 0.1rem;
+    }
+    h2 {
+      max-width: 30rem;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+//Featured products
+.featured-products-1 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  border-bottom: 1px solid #281926;
+
+  .item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.2rem;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.3);
+
+    a,
+    a:hover {
+      color: #fff;
+    }
+
+    img {
+      max-width: 100%;
+      -moz-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    .item-details {
+      position: absolute;
+      background-color: rgba(218, 110, 113, 0.5);
+      bottom: 0;
+      color: #fff;
+      width: 100%;
+    }
+
+    .addtocart {
+      position: absolute;
+      width: 100%;
+      display: none;
+      top: 50%;
+      text-align: center;
+    }
+
+    &:hover {
+      img {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+
+      .addtocart {
+        display: block;
+      }
+    }
+  }
+}
+
+//Top deals
+.home-top-deals-3 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  border-bottom: 1px solid #281926;
+
+  img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .fa {
+    font-size: 2rem;
+  }
+
+  .carousel-inner {
+    width: 90%;
+    left: 7%;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    opacity: 0.7;
+    width: 0%;
+  }
+}
+
+//JUMBOTRON
+.jumbotron2 {
+  position: relative;
+  padding: 7rem 0;
+  border-bottom: 1px solid #281926;
+  margin: 0;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../images/slide2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  color: #fff;
+
+  h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 4rem;
+  }
+
+  .container {
+    max-width: 40rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.2;
+    z-index: 1;
+  }
+}
+
+//Home blog
+.home-blog-2 {
+  padding: 7rem 0;
+  .card {
+    border: 0;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+//NEWSLETTER
+.newsletter-1 {
+  padding: 7rem 0;
+  border-bottom: 1px solid #281926;
+  background: url("../images/background4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  position: relative;
+  .form-control {
+    max-width: 300px;
+  }
+
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.1;
+    z-index: 1;
+  }
+
+  .home-blog-2 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    border-bottom: 1px solid #281926;
+  }
+}
+
+@media (min-width: 768px) {
+  .newsletter-1 .right-content {
+    text-align: right;
+  }
+}
+
+@media (min-width: 992px) {
+  .newsletter-1 form {
+    float: right;
+  }
+}
+
+.right-content,
+.top-brand {
+  position: relative;
+  z-index: 2;
+}
+
+//FOOTER
+.footer-1 {
+  padding-top: 6rem;
+
+  .brand {
+    font-family: "Pacifico", cursive;
+  }
+
+  .social a:hover {
+    text-decoration: none;
+  }
+
+  .footer-brand {
+    font-size: 2rem;
+    li {
+      padding-right: 10px;
+    }
+  }
+
+  .accepted-payments li,
+  .footer-brand li {
+    display: inline;
+    color: $color_one;
+  }
+
+  .text-muted {
+    color: #281926 !important;
+  }
+
+  .designer a {
+    color: #281926;
+  }
+}
+
+@media (min-width: 576px) {
+  .footer-1 .designer {
+    float: right;
+  }
+}
