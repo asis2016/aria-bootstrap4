@@ -6,5 +6,5 @@ Live: https://asis2016.github.io/aria-bootstrap4/
 Images from https://unsplash.com
 
 ## Screenshot
-![Screenshot](/screenshot.jpg)
+![Screenshot](/screenshots/screenshot-v1.jpg)
 

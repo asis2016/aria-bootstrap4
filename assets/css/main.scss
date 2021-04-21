@@ -1,12 +1,15 @@
-
 $theme-colors: (
-"primary": #0074d9,
-"danger": #ff4136,
-"a-p-1": #DA6E71,        //red type
-"a-p-2": #4A7984,           //blue type
-"a-p-3": #BB7360,           //orange type
-"a-p-light": #F4F2F5,   //white
-"a-p-dark": #281926   //dark purple type
+  "primary": #0074d9,
+  "danger": #ff4136,
+  "a-p-1": #da6e71,
+  //red type
+  "a-p-2": #4a7984,
+  //blue type
+  "a-p-3": #bb7360,
+  //orange type
+  "a-p-light": #f4f2f5,
+  //white
+  "a-p-dark": #281926 //dark purple type,
 );
 
 @import "node_modules/bootstrap/scss/bootstrap";

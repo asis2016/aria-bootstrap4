@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass-watch": "sass --watch assets/css/style.scss assets/css/style.css"
+    "sass": "sass --watch assets/css/style.scss assets/css/style.css",
+    "prettier": "prettier --write '**/*.{js,css,scss, html}'"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "sass": "^1.32.10"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
   }
 }
