@@ -23,7 +23,7 @@ h6 {
 }
 
 .btn {
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 .single-product {
@@ -39,7 +39,7 @@ h6 {
     position: relative;
     overflow: hidden;
     border-radius: 0.2rem;
-    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.3);
 
     img {
       max-width: 100%;
@@ -92,7 +92,7 @@ h6 {
     position: relative;
     overflow: hidden;
     border-radius: 0.2rem;
-    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.3);
 
     img {
       max-width: 100%;

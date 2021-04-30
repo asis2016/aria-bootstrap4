@@ -1,5 +1,5 @@
 # aria-bootstrap4
-Aria bootstrap 4 is a free ecommerce Boostrap 4 template for clothing store.
+Aria Bootstrap 4 is a free E-commerce Boostrap 4 template for clothing store.
 
 Live: https://asis2016.github.io/aria-bootstrap4/
 
