@@ -1,9 +1,6 @@
 # aria-bootstrap4
 Aria Bootstrap 4 is a free E-commerce Bootstrap 4 template for clothing store.
 
-## Screenshot
-![Screenshot](/screenshots/screenshot-v1.jpg)
-
 ## Tech Stack
 HTML / CSS, JavaScript, SASS, Bootstrap 4
 
